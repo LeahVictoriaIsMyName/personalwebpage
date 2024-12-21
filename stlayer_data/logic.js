@@ -12,7 +12,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
 // probably a better way to do this but who cares LOL
 var imageURLs = [ "images/img22.png";
-var audioURLs = [ "sounds/6.mp3"];
+var audioURLs = [ "6.mp3"];
 function GetImage() {
 	var img = '<img src=\"';
 	var randomIndex = Math.floor(Math.random() * imageURLs.length);
