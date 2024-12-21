@@ -11,7 +11,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
   let opener = _____WB$wombat$assign$function_____("opener");
 
 // probably a better way to do this but who cares LOL
-var imageURLs = [ "images/img22.png";
+var imageURLs = [ "img22.png";
 var audioURLs = [ "6.mp3"];
 function GetImage() {
 	var img = '<img src=\"';
