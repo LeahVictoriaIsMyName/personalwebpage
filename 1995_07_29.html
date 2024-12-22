@@ -4,13 +4,44 @@
 		<meta name="description" content="Every copy of Super Mario 64 is personalized. Every copy of Super Mario 64 is personalized. Every copy of Super Mario 64 is personalized. Every copy of Super Mario 64 is personalized. Every copy of Super Mario 64 is personalized. Every copy of Super Mario 64 is personalized. Every copy of Super Mario 64 is personalized.">
 		<meta name="msapplication-TileColor" content="#0071d4">
 		<meta name="theme-color" content="#0071d4">
+
 		<link rel="shortcut icon" href="https://web.archive.org/web/20200607113003im_/http://stlayer.info/favicon.ico">
 		<link rel="stylesheet" href="stlayer_data/main.css">
-	</head>
 	
 	<body>
-		<script type="text/javascript" src="stlayer_data/logic.js">
-
 		</script>
-       </body>
-</html>
+		<link rel="shortcut icon" href=stlayer_data/img2.webp>
+	
+	<body>
+
+		<script type="text/javascript">
+			// probably a better way to do this but who cares LOL
+		var imageURLs = [ "stlayer_data/img1.jpg", "stlayer_data/img3.webp", "stlayer_data/img4.webp", "stlayer_data/img5.webp", "stlayer_data/img6.webp", "stlayer_data/img7.webp", "stlayer_data/img8.webp", "stlayer_data/img9.webp"];
+		var audioURLs = [ "stlayer_data/1.ogg", "stlayer_data/2layer.ogg", "stlayer_data/3layer.ogg", "stlayer_data/4.ogg", "stlayer_data/5.ogg", "stlayer_data/6.mp3", "stlayer_data/7.ogg", "stlayer_data/8.ogg", "stlayer_data/9.ogg", "stlayer_data/10.ogg", "stlayer_data/11layer.ogg", "stlayer_data/12layer.ogg", ];
+		function GetImage() {
+			var img = '<img src=\"';
+			var randomIndex = Math.floor(Math.random() * imageURLs.length);
+			img += imageURLs[randomIndex];
+			img += '\" alt=\"Every copy of Super Mario 64 is personalized.\"';
+			img += '\ style=\"width:80%; height:100%; \"/>';
+			return img;
+		}
+		function GetAudio() {
+			var audio = '<embed src="';
+			var index = Math.floor(Math.random() * audioURLs.length);
+			audio += audioURLs[index];
+			audio += '\" loop="true"\"';
+			audio += '\ autostart="false"\"';
+			audio += '\ hidden="true"\"/>';
+			return audio;
+		}
+		function WritePage(){
+			document.write()
+			document.write(GetAudio())
+			document.write(GetImage())
+		}
+		</script>
+		<noscript><meta http-equiv="refresh" content="0"; src = 1995_07_29.html/></noscript>
+		<button onclick="WritePage()">Start stlayer.info emulation</button>
+
+		
